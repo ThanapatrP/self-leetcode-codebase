@@ -5,13 +5,13 @@ import (
 )
 
 func main() {
-	list1child2 := ListNode{3, nil}
-	list1child1 := ListNode{4, &list1child2}
-	list1 := ListNode{2, &list1child1}
+	list1child2 := ListNode{9, nil}
+	list1child1 := ListNode{9, &list1child2}
+	list1 := ListNode{9, &list1child1}
 
-	list2child2 := ListNode{4, nil}
-	list2child1 := ListNode{6, &list2child2}
-	list2 := ListNode{5, &list2child1}
+	list2child2 := ListNode{9, nil}
+	list2child1 := ListNode{9, &list2child2}
+	list2 := ListNode{9, &list2child1}
 
 	finalLn := addTwoNumbers(&list1, &list2)
 	pointer := finalLn
